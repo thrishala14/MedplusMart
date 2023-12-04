@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Pharmacy</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+        .input-group {
+          align-items: center;
+          width: 50% !important;
+          position: relative;
+          left: 20%;
+          top: 10%;
+        }
+        hr{
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+        .bor-radius{
+          border-radius: 50%;
+        }
+        .bi{
+          margin-left:10px;
+          margin-right:10px;
+        }
+        .posit{
+          position: fixed;
+        }
+        .active-link{
+          height:5px;
+          width:170px;
+          margin:0;
+          text-align: center;
+        }
+        body{
+          font-family: 'Roboto' !important;
+        }
+        li{
+          font-family: 'Roboto300';
+        }
+        .card{
+          width:45%;
+          margin:30px;
+          height:5%;
+          box-shadow: 2px 2px rgb(205, 203, 203);
+        }
+        .card:hover{
+          box-shadow: 3px 3px rgb(139, 139, 139);
+        }
+        .cards{
+          display: flex;
+        }
+        h4{
+          font-family: 'Roboto300';
+          margin-left: 30px;
+        }
+        h6{
+          font: 'Roboto';
+        }
+        .col{
+          margin:-12px;
+          width:70px;
+        }
+        .icons{
+          width:11px;
+        }
+        .rowws{
+          width:50% !important;
+          text-align: 50%;
+          display: flex;
+          justify-content: flex-end;
+        }
+        a{
+            text-decoration: none;
+        }
+      
+      </style>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body style="background-color:#f8f9fa">
+    <header class="main-header navbar-expand-md">
+        <nav class="navbar no-gutters py-2 border-bottom posit" style="background-color:white">
+            <div class="d-flex p-1">
+                <img src="img/mm.png" alt="MedPlusMart" height="35">
+            </div>
+            <nav class="navbar no-gutters py-0 border-bottom">
+                <div class="d-flex "></div>
+                <ul class="navbar-nav justify-content-end top-categories m-1">
+                    <a href=contact.html class="text-decoration-none"><li class="nav-item active">Contact Us! &nbsp;    &nbsp;  &nbsp;</li></a>
+
+                    <li class="nav-item">Store Finder &nbsp; &nbsp; &nbsp; </li>
+                    <li class="nav-item">Download App &nbsp; &nbsp; &nbsp; </li>
+                    <li class="nav-item">Login/Register
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                            <path fill-rule="evenodd"
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                        </svg> &nbsp;
+                    </li>
+                </ul>
+                </div>
+            </nav>
+        </nav>
+        <div class="row rowss" style="background-color:white">
+            <div class="input-group xs-3">
+                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">All Products</button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#" aria-selected="true">All Products</a></li>
+                    <li><a class="dropdown-item" href="#">General Store</a></li>
+                    <li><a class="dropdown-item" href="#">Pharmacy</a></li>
+                </ul>
+                <input type="text" class="form-control" aria-label="Text input with dropdown button"
+                    placeholder="Seach for Products">
+                <button type="button" class="btn btn-info bor-radius">Upload</button>
+            </div>
+            <div class="rowws">
+                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-bell"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-cart4"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+                </svg>
+            </div>
+
+        </div>
+        <nav class="navbar subnav no-gutters"></nav>
+        <hr>
+        <ul class="nav bar" style="box-shadow: 2px 2px rgb(193, 191, 191);">
+            <li class="nav-item active-link">
+
+                <a class="nav-link active" href="#" style="color: black; font-weight: bold;"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-list"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>Health Store</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="home.html" style="color: black;">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="color: black;"><b>Pharmacy</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="services.html" style="color: black;">Doctors</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="career.html" style="color: black;">Career</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="portfolio.html" style="color: black;">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="dashboard.html" style="color: black;">Dashboard</a>
+              </li>
+
+        </ul>
+        <hr>
+    </header>
+ 
+    <main style="margin:15px;">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="home.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Pharmacy</li>
+            </ol>
+        </nav>
+        <div class="imgTitle text-center m-5">
+            <img class="img-fluid" src="img/three-ways-to-order.png" title="Three ways to order your medicine" alt="Three ways to order your medicine">
+        </div>
+        <div class="d-flex " style="justify-content: space-evenly">
+        <div class="card m-50" style="width: 18rem; align-items: center;">
+            <img src="img/Screenshot 2023-09-09 112343.png" class="card-img-top text-center" alt="..." style="width:50% !important">
+            <div class="card-body">
+              <h5 class="card-title">Buy Online</h5>
+                <ul class="helpList">
+                    <li>Search and select the medicines you want</li>
+                    <li>Upload your prescription at check out</li>
+                    <li>Choose home delivery or store pick up</li>
+                </ul>
+            </div>
+          </div>
+
+          <div class="card m-50" style="width: 18rem; align-items: center;">
+            <img src="img/Screenshot 2023-09-09 112411.png" class="card-img-top" alt="..." style="width:50% !important">
+            <div class="card-body">
+              <h5 class="card-title">Click and Pick</h5>
+              <ul class="helpList">
+                <li>Search and select the Medicines you want</li>
+                <li>Select the MedPlus store where you wish to pick up the order</li>
+                <li>Show the prescription at the store and collect your medicine</li>
+            </ul>
+            </div>
+          </div>
+
+          <div class="card  m-50" style="width: 18rem; align-items: center;">
+            <img src="img/Screenshot 2023-09-09 112435.png" class="card-img-top" alt="..." style="width:50% !important">
+            <div class="card-body">
+              <h5 class="card-title">Click and Pick</h5>
+              <ul class="helpList">
+                <li>Our customer Representative will call you and confirm the order</li>
+                <br>
+                <br>
+                <li style="list-style-type: none;"><a href="#" class="btn w-80 br-100 text-center" style="background-color: #c5161d; color:#f8f9fa">Receive a Call Back</a></li>
+            </ul>
+              
+            </div>
+          </div>
+    </div>
+    <div class="d-flex g-50">
+        <div class="tab-content p-3 mb-3 brandswraper " style="margin-right:200px !important;">
+                    <div class="tab-pane active">
+                        <h5 class="mb-4">
+                            Browse drugs by Therapeutic category<span>
+                                &nbsp;</span>
+                        </h5>
+                        <ul class="drugsCategory">
+                            <li class="categoryList">
+                                <h5 class="d-flex" title="Gastrointestinal &amp; Hepatobiliary System">
+                                    Gastrointestinal &amp; Hepatobiliary System</h5>
+                                <ul class="inline-list">
+                                    <li><button class="btn" title="Antacids, Antireflux Agents &amp; Antiulcerants" role="button">Antacids, Antireflux Agents &amp; Antiulcerants</button></li>
+                                    <li><button class="btn" title="GIT Regulators &amp; Anti-Inflammatories" role="button">GIT Regulators &amp; Anti-Inflammatories</button></li>
+                                    <li><button class="btn" title="Antispasmodics" role="button">Antispasmodics</button></li>
+                                    
+                                </ul>
+                            </li>
+                            <li class="categoryList">
+                                <h5 class="d-flex" title="Cardiovascular &amp; Hematopoietic system">Cardiovascular &amp; Hematopoietic system</h5>
+                                <ul class="inline-list">
+                                    <li><button class="btn " title="Cardiac Drugs" role="button">Cardiac Drugs</button></li>
+                                    <li><button class="btn " title="Anti-Anginal Drugs" role="button">Anti-Anginal Drugs</button></li>
+                                    <li><button class="btn " title="ACE Inhibitors / Direct Renin Inhibitors" role="button">ACE Inhibitors / Direct Renin Inhibitors</button></li>
+                                </ul>
+                            </li>
+                            <li class="categoryList">
+                                <h5 class="d-flex" title="Respiratory System">
+                                    Respiratory System</h5>
+                                <ul class="inline-list">
+                                    <li><button class="btn" title="Respiratory Stimulants" role="button">Respiratory Stimulants</button></li>
+                                    <li><button class="btn" title="Antiasthmatic &amp; COPD Preparations" role="button">Antiasthmatic &amp; COPD Preparations</button></li>
+                                    <li><button class="btn" title="Cough &amp; Cold Preparations" role="button">Cough &amp; Cold Preparations</button></li>
+                                    <li><button class="btn" title="Nasal Decongestants &amp; Other Nasal Preparations" role="button">Nasal Decongestants &amp; Other Nasal Preparations</button></li>
+                                    <li><button class="btn" title="Other Drugs Acting on the Respiratory System" role="button">Other Drugs Acting on the Respiratory System</button></li>
+                                </ul>
+                            </li>
+                            <li class="categoryList">
+                                <h5 class="d-flex" title="Central Nervous System">
+                                Central Nervous System</h5>
+                                <ul class="inline-list">
+                                    <li><button class="btn" title="Anxiolytics" role="button">Anxiolytics</button></li>
+                                    <li><button class="btn" title="Hypnotics &amp; Sedatives" role="button">Hypnotics &amp; Sedatives</button></li>
+                                    <li><button class="btn" title="Antidepressants" role="button">Antidepressants</button></li>
+                                </ul>
+                            </li>
+                            <li class="categoryList">
+                                <h5 class="d-flex" title="Musculo-Skeletal System">
+                                    Musculo-Skeletal System</h5>
+                                <ul class="inline-list">
+                                    <li><button class="btn" title="Disease-Modifying Anti-Rheumatic Drugs (DMARDs)" role="button">Disease-Modifying Anti-Rheumatic Drugs (DMARDs)</button></li>
+                                    <li><button class="btn" title="Nonsteroidal Anti-Inflammatory Drugs (NSAIDs)" role="button">Nonsteroidal Anti-Inflammatory Drugs (NSAIDs)</button></li>
+                                    <li><button class="btn" title="Hyperuricemia &amp; Gout Preparations" role="button">Hyperuricemia &amp; Gout Preparations</button></li>
+                                </ul>
+                            </li>
+                            <li class="categoryList">
+                                <h5 class="d-flex" title="Hormones">Hormones</h5>
+                                    <ul class="inline-list">
+                                        <li><button class="btn" title="Androgens &amp; Related Synthetic Drugs" role="button">Androgens &amp; Related Synthetic Drugs</button></li>
+                                        <li><button class="btn" title="Oestrogens &amp; Progesterones &amp; Related Synthetic Drugs" role="button">Oestrogens &amp; Progesterones &amp; Related Synthetic Drugs</button></li>
+                                        <li><button class="btn" title="Combined Sex Hormones" role="button">Combined Sex Hormones</button></li>
+                                    </ul>
+                                </li>
+                            <li class="categoryList">
+                                <h5 class="d-flex" title="Contraceptive Agents">
+                                    Contraceptive Agents</h5>
+                                    <ul class="inline-list">
+                                        <li><button class="btn" title="Oral Contraceptives" role="button">Oral Contraceptives</button></li>
+                                        <li><button class="btn" title="Depot Contraceptives" role="button">Depot Contraceptives</button></li>
+                                        <li><button class="btn" title="Other Contraceptives" role="button">Other Contraceptives</button></li>
+                                    </ul>
+                            </li>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+        <div class="tab-content p-3 mb-3 brandswraper">
+            <div class="tab-pane active">
+                <h5 class="mb-4">Browse Surgicals products by category<span>&nbsp;</span></h5>
+                <ul class="drugsCategory">
+                    <li class="categoryList"><h5 class="d-flex" title="Anaesthesia"><i class="angle-right"></i>Anaesthesia</h5><ul class="inline-list"><li><button class="btn " title="Agents" role="button">Agents</button></li><li><button class="btn" title="Equipment/Kits/Devices" role="button">Equipment/Kits/Devices</button></li></ul></li>
+                    <li class="categoryList"><h5 class="d-flex" title="Cardiovascular"><i class="angle-right"></i>Cardiovascular</h5><ul class="inline-list"><li><button class="btn" title="Cathlab" role="button">Cathlab</button></li><li><button class="btn" title="Defibrillators/Monitors" role="button">Defibrillators/Monitors</button></li><li><button class="btn" title="ECG and Accessories" role="button">ECG and Accessories</button></li><li><button class="btn" title="BP &amp; Pressure Monitoring Devices" role="button">BP &amp; Pressure Monitoring Devices</button></li></ul></li>
+                    <li class="categoryList"><h5 class="d-flex" title="CSSD"><i class="angle-right"></i>CSSD</h5><ul class="inline-list"><li><button class="btn" title="Antiseptics/Disinfectants" role="button">Antiseptics/Disinfectants</button></li><li><button class="btn" title="Sterilization Products" role="button">Sterilization Products</button></li><li><button class="btn" title="Surgical Wear" role="button">Surgical Wear</button></li><li><button class="btn" title="Linen" role="button">Linen</button></li><li><button class="btn" title="Stationery" role="button">Stationery</button></li><li><button class="btn" title="Ward Equipment" role="button">Ward Equipment</button></li><li><button class="btn" title="Miscellaneous Supplies" role="button">Miscellaneous Supplies</button></li></ul></li>
+                    <li class="categoryList"><h5 class="d-flex" title="Catheters &amp; Tubes"><i class="angle-right"></i>Catheters &amp; Tubes</h5><ul class="inline-list"><li><button class="btn" title="Feeding Tubes" role="button">Feeding Tubes</button></li><li><button class="btn" title="Catheters" role="button">Catheters</button></li><li><button class="btn" title="Drains" role="button">Drains</button></li><li><button class="btn " title="Suctions" role="button">Suctions</button></li><li><button class="btn" title="Accessories" role="button">Accessories</button></li></ul></li>
+                
+                </ul>
+            </div>
+        </div>
+    </div>
+    </main>
+    <div class="row footer-img mt-3" style="background-color: #f8f9fa;"><div class="col-7 ">
+        <div class="row p-0">
+          <div class="col-6">
+            <div class="lens">
+              <h6 class="color-dgry">Partners</h6>
+              <img src="img/lens.svg" title="MedPlusLens.com" alt="MedPlusLens.com"></a>
+            </div></div>
+            <div class="col">
+              <div class="footers">
+              <h6 class="color-dgry">Follow us</h6>
+              <div class="d-flex">
+        
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                      <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                    </svg>
+                  
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                      <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+                    </svg>
+                  
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                      <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                    </svg>
+                 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                      <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                    </svg>
+                  </div>
+              </div></div></div></div>
+                  <div class="col">
+                    <img alt="footer-img" class="img-fluid" src="img/footer.svg">
+                  </div>
+    <div class="footer" style="background-color: black;">
+        <div class="row">
+          <p class="w-100 text-center" style="color: white;">© 2022 MedPlusMart.com. All rights reserved.</p>
+        </div>
+      </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+      </body>
+
+</html>

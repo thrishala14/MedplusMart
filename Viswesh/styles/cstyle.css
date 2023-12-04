@@ -1,0 +1,77 @@
+body {
+    font-family: Arial;
+    margin:0;
+  }
+  .container{
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    border-block:0.2px solid;
+    box-shadow: 1px 2px 5px #888888;
+    border-top: 15px;
+  
+    
+   }
+   .left{
+    padding-left: 15px;
+    
+   }
+   .right{
+    display: flex;
+    gap: 2rem;
+    padding-right: 2rem;
+    
+
+    
+   }
+   .fa fa-user-circle{
+    pointer-events: cursor;
+  
+  }
+   .card-body{
+    border:1px solid black;
+   }
+   .card-container{
+    padding-top: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .card-body{
+    padding: 2rem;
+    width:110%;
+   }
+   .card-title{
+    color:red;
+    font-size: 25px;
+    text-align:center;
+    
+   }
+   .phone{
+    color:red;
+    font-size:35px;
+    text-align: center;
+
+   }
+   #email{
+    color:red;
+   }
+  .phone1{
+    font-size:medium;
+    text-align: center;
+  }
+  .card-text{
+    text-align: center;
+  }
+  .lis{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  
+  }
+  .card-body{
+    box-shadow: 5px 10px 18px #888888;
+  }
+    
+  

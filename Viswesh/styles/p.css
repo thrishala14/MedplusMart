@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(227, 235, 235);  
+}
+.container{
+    display:flex;
+    margin-left: 0;
+    background-color: rgb(227, 235, 235);
+
+}
+.list-group-item:hover{
+    color: brown;
+    cursor: hand;
+
+}
+.card{
+    margin-top: 2.5%;
+    width:200%;
+    margin-left: 4%;
+
+    
+    
+}
+
+.box-container{
+    border: 1px solid black;
+    height:30%;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-right: 5%;
+    margin-top:5%;
+    margin-left: 2%;
+    background-color: rgb(245, 248, 248);
+}
+.demo{
+    margin-top:0%;
+}
+.card-body{
+  width:80%;
+  height:20%;
+
+}
